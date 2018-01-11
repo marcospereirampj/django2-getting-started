@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3 class="text-center">All Genres</h3>
+    <hr>
+    <div class="row marketing">
+        {% for genre in genres %}
+            <div class="col-lg-6">
+                <h4>{{ genre.title }}</h4>
+                <p>{{ genre.description }}</p>
+                <p>
+                    <a href="{% url 'genre_detail' genre.id %}">
+                        View Movies
+                    </a>
+                </p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

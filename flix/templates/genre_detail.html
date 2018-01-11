@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3 class="text-center">All Movies - {{ genre.title }}</h3>
+    <hr>
+    <div class="row marketing">
+        {% for movie in genre.movie_set.all %}
+            <div class="col-lg-6">
+                <h4>{{ movie.title }} - {{ movie.pub_date }}
+                    {% if movie.was_published_recently %}<span class="badge badge-secondary">New</span>{% endif %}</h4>
+                <p>{{ movie.synopsis }}</p>
+                <p>
+                    <a href="{% url 'movie_detail' movie.id %}">
+                        View Detail
+                    </a>
+                </p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

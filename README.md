@@ -9,13 +9,14 @@ Throughout this tutorial, we’ll walk you through the creation of a movies cate
 
 * Python 3
 * [Django 2.0.1](https://www.djangoproject.com/)
+* [Bootstrap 4.0](https://getbootstrap.com/)
 
 ## Contributors
 
 * [Marcos Pereira](marcospereira.mpj@gmail.com)
 
 
-## Project
+## Project Structure
 
 ```
     | - manage.py 
@@ -36,3 +37,18 @@ Throughout this tutorial, we’ll walk you through the creation of a movies cate
         \ - apps.py
         \ - urls.py
 ```
+
+## Start Development Server
+
+1. Run `python manage.py migrate` to create the application models.
+
+2. Start the development server and visit http://127.0.0.1:8000/admin/
+   to create a genre and a movie (you'll need the Admin app enabled).
+
+3. Visit http://127.0.0.1:8000/flix/.
+
+
+## URLs
+
+* Admin: http://127.0.0.1:8000/admin/
+* Home Page: http://127.0.0.1:8000/flix/

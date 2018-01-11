@@ -1,3 +1,3 @@
 
-from .category import Category
+from .genre import Genre
 from .movie import Movie

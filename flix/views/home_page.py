@@ -1,5 +1,12 @@
-from django.http import HttpResponse
+
+from django.views import generic
+
+from ..models.genre import Genre
 
 
-def home_page(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+class HomePageView(generic.ListView):
+    template_name = 'home_page.html'
+    context_object_name = 'genres'
+
+    def get_queryset(self):
+        return Genre.objects.all()
