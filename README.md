@@ -13,3 +13,26 @@ Throughout this tutorial, we’ll walk you through the creation of a movies cate
 ## Contributors
 
 * [Marcos Pereira](marcospereira.mpj@gmail.com)
+
+
+## Project
+
+```
+    | - manage.py 
+    | - getting_started
+        \ - settings.py
+        \ - urls.py
+        \ - wsgi.py
+    | - flix
+        \ - migrations
+        \ - models
+            \ - category.py
+            \ - movie.py   
+        \ - templates
+            \ - home_page.html
+        \ - views 
+            \ - home_page.py
+        \ - admin.py
+        \ - apps.py
+        \ - urls.py
+```
