@@ -1,4 +1,4 @@
-# Django 2 - Getting Started
+# Getting Started with Django 2
 
 
 ## Introduction
