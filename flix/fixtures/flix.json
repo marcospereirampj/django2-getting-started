@@ -1,0 +1,46 @@
+[
+  {
+    "model": "flix.genre",
+    "pk": 1,
+    "fields": {
+      "title": "Action",
+      "description": "An action story is similar to adventure, and the protagonist usually takes a risky turn, which leads to desperate situations (including explosions, fight scenes, daring escapes, etc.)."
+    }
+  },
+  {
+    "model": "flix.genre",
+    "pk": 2,
+    "fields": {
+      "title": "Adventure",
+      "description": "An adventure story is about a protagonist who journeys to epic or distant places to accomplish something. It can have many other genre elements included within it, because it is a very open genre."
+    }
+  },
+  {
+    "model": "flix.genre",
+    "pk": 3,
+    "fields": {
+      "title": "Comedy",
+      "description": "Comedy is a story that tells about a series of funny, or comical events, intended to make the audience laugh. It is a very open genre, and thus crosses over with many other genres on a frequent basis."
+    }
+  },
+  {
+    "model": "flix.movie",
+    "pk": 1,
+    "fields": {
+      "title": "The Avenger",
+      "synopsis": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+      "pub_date": "2012-04-22",
+      "genre": 1
+    }
+  },
+  {
+    "model": "flix.movie",
+    "pk": 2,
+    "fields": {
+      "title": "Star Wars: Episode VIII - The Last Jedi",
+      "synopsis": "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares for battle with the First Order.",
+      "pub_date": "2017-12-18",
+      "genre": 1
+    }
+  }
+]
