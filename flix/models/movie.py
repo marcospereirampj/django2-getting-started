@@ -15,7 +15,8 @@ class Movie(models.Model):
         return self.title
 
     def was_published_recently(self):
-        return self.pub_date >= datetime.date.today() - datetime.timedelta(days=30)
+        today = datetime.date.today()
+        return today >= self.pub_date >= datetime.date.today() - datetime.timedelta(days=30)
 
     class Meta:
         verbose_name_plural = "movies"

@@ -48,6 +48,12 @@ Throughout this tutorial, we’ll walk you through the creation of a movies cate
 3. Visit http://127.0.0.1:8000/flix/.
 
 
+## Running Tests
+
+```
+python manage.py test --pattern="*_tests.py"
+```
+
 ## URLs
 
 * Admin: http://127.0.0.1:8000/admin/
